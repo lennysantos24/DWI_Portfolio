@@ -1,0 +1,133 @@
+:root {
+    --azul: #0E516B;
+    --laranja: #CA7429;
+    --fundo:  #121a1d;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121a1d;
+}
+
+nav{
+    border-radius: 100%;
+}
+
+#menu{
+    border-radius: 100%;
+    width: 6vw;
+}
+
+.menu {
+    max-width: fit-content;
+    display: inline-block;
+    position: fixed;
+    border-radius: 100%;
+    margin-top: 2vw;
+    margin-left: 90vw;
+
+  }
+  
+  /* button open menu */
+  
+  .open-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0);
+    border-color: #0e516b00;
+    transition: opacity 0.2s ease 0s;
+    
+  }
+
+  .open-menu:active {
+    opacity: 0.5;
+  }
+  
+  /* menu trigger */
+  
+  .menu-trigger {
+    padding: 0.5rem 1rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .menu-trigger:hover {
+    display: block;
+  }
+  
+  .open-menu:active + .menu-trigger {
+    display: block;
+  }
+  
+  /* nav menu */
+  
+  .nav-menu {
+    border-radius: 4vw;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+    pointer-events: none;
+    background: var(--laranja);
+    margin-left: -10vw;
+    height: 20vw;
+  }
+  
+  .nav-menu:hover {
+    pointer-events: initial;
+    opacity: 1;
+  }
+  
+  .menu-trigger:hover + .nav-menu {
+    pointer-events: initial;
+    opacity: 1;
+  }
+  
+  .nav-menu-item {
+    font-family: "Cutive Mono", monospace;
+    font-size: 2vw;
+    margin-top: 0.3vw;
+    padding: 1vw 1vw 3vw 1vw;
+    height: 0.5vw;
+    width: 70%;
+    text-align: center;
+    transition: opacity 0.3s ease 0s, background-color 0.2s ease 0s;
+    cursor: pointer;
+    background: var(--laranja);
+    color: var(--fundo);
+  }
+  
+  .nav-menu-item:hover {
+    width: 85.5%;
+    background-color: var(--azul);
+  }
+  
+  .nav-menu-item:active {
+    opacity: 0.8;
+    background-color: #41464e;
+  }
+  
+  /* item triggered */
+  
+  .item-triggered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50% 0px;
+    font: 600 2rem monospace;
+
+  }
+  
+  .item-triggered span {
+    color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+  }
