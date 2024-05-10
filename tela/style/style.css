@@ -1,16 +1,17 @@
 :root {
     --azul: #0E516B;
     --laranja: #CA7429;
-    --fundo:  #121a1d;
+    --fundo:  #0b0f10;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Jersey+25+Charted&family=VT323&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #121a1d;
+    background-color: var(--fundo);
 }
 
 nav{
@@ -27,7 +28,7 @@ nav{
     display: inline-block;
     position: fixed;
     border-radius: 100%;
-    margin-top: 2vw;
+    margin-top: 3vw;
     margin-left: 90vw;
 
   }
@@ -131,3 +132,46 @@ nav{
     color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
   }
+
+/*APRESENTACAO*/
+
+#ola_nome{
+    color: white;
+    font-family: "Jazz LET", fantasy;
+    font-style: normal;
+    font-size: 4vw;
+    font-weight: normal;
+    font-weight: 2000;
+    line-height: 5vw;
+
+}
+
+#fundo{
+  width: 100vw;
+  height: 38vw;
+  background-image: linear-gradient(to bottom, transparent 0%, var(--fundo) 99%), url(/imagens/agua.jpg);
+  background-size: cover;
+}
+
+#espacinho{
+  height: 1.5vw;
+}
+
+#borda{
+  border-image: linear-gradient(to bottom, transparent 0%, var(--fundo) 99%);
+  border: 6px;
+  border-style: solid;
+  padding: 5vw;
+  width: 85vw;
+  margin-left: 2vw;
+  height: 20vw;
+}
+
+#breve_descricao{
+  color:var(--laranja);
+  font-family: "Cutive Mono", monospace;
+  font-style: normal;
+  margin-top: 1.7vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
