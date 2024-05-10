@@ -1,5 +1,4 @@
 
-
 // MENU JAVASCRIPT
 
 const buttons = document.querySelectorAll(".nav-menu-item");
@@ -49,3 +48,5 @@ setTimeout(function() {
   setTimeout(function() {
       div.style.display = 'block';
   }, 4700);
+
+/*PROJETOS*/

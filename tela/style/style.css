@@ -175,3 +175,113 @@ nav{
   font-size: 1.5vw;
   line-height: 2vw;
 }
+
+/*PROJETO*/
+
+#projetos{
+  margin-top: 7vw;
+  margin-left: 2vw;
+  width: 90vw;
+  height: 70vw;
+  background-color: #000000;
+  display: flex;
+  border-radius: 2vw;
+  flex-wrap: wrap;
+}
+
+#texto_projetos{
+  width: 100vw;
+  margin-top: 3vw;
+  display: flex;
+  font-size: 3vw;
+  font-family: "Jazz LET", fantasy;
+  color: white;
+  font-weight: 100;
+}
+
+.logo_simplificada{
+  width: 6w;
+  height: 6vw;
+  transform: rotate(90deg);
+  margin-top: -0.7vw;
+}
+
+#div_projetos_titulo{
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+
+#div_projetos{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -6vw;
+}
+
+.estado{
+  border-radius: 5vw;
+  margin-bottom: 2vw;
+  padding: 1.2vw;
+  font-size: 2vw;
+}
+
+.img_site{
+  height: 23vw;
+  border-radius: 2vw;
+}
+
+.site{
+  margin-top: 3vw;
+  font-family: "Cutive Mono", monospace;
+}
+
+#finalizado{
+  background-color: var(--laranja);
+  font-weight: bold;
+  color: white;
+}
+
+#fazendo{
+  background-color: var(--azul);
+  font-weight: bold;
+  color: white;
+}
+
+#barra{
+  background-color: white;
+  width: 0.3vw;
+  height: 52vw;
+  border-radius: 10vw;;
+}
+
+.nome_proj{
+  background-color: rgba(255, 255, 255, 0.128);
+  color: white;
+  margin-top: 2vw;
+  border-radius: 2vw;
+  font-family: "Cutive Mono", monospace;
+  height: 14vw;
+  padding: 0.1vw;
+}
+
+.tipo_site{
+  font-size: 2vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+
+.titulo_projeto{
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -2vw;
+
+}
+
+#site1{
+  color:#CA7429;
+}
+
+#site2{
+  color:#0E516B;
+}
