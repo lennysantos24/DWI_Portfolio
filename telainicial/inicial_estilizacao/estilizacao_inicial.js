@@ -1,17 +1,14 @@
-function aparecerTexto() {""
-    document.getElementById("div").innerHTML = iframe;
+var nome = document.getElementById('carregando_texto');
+var eu = 'BEM VINDO AO MEU PORTFOLIO :D';
+
+  function escrever(str, el) {
+    var char = str.split('').reverse();
+    var typer = setInterval(function() {
+      if (!char.length) return clearInterval(typer);
+      var next = char.pop();
+      el.innerHTML += next;
+    }, 250);
   }
+  escrever(eu, nome);
 
-var div = document.getElementById('TAWHC');
-var texto = 'This Action Will Have Consequences...';
 
-function escrever(str, el) {
-  var char = str.split('').reverse();
-  var typer = setInterval(function() {
-    if (!char.length) return clearInterval(typer);
-    var next = char.pop();
-    el.innerHTML += next;
-  }, 200);
-}
-
-escrever(texto, div)

@@ -1,3 +1,27 @@
 body {
     background-color: rgb(2, 6, 15);
 }
+
+#tela{
+    width:96vw;
+    text-align: center;
+    margin-top: 6vw;
+    animation: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 7s;
+}
+
+#logo_completa{
+    width: 30vw;
+}
+
+#carregando_texto{
+    color:#CA7429;
+    font-family: "Cutive Mono", monospace;
+    font-size: 5vw;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
