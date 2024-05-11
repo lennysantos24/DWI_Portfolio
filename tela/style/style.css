@@ -1,0 +1,451 @@
+:root {
+    --azul: #0E516B;
+    --laranja: #CA7429;
+    --fundo:  #0b0f10;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Jersey+25+Charted&family=VT323&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fundo);
+}
+
+nav{
+    border-radius: 100%;
+}
+
+#menu{
+    border-radius: 100%;
+    width: 6vw;
+}
+
+.menu {
+    max-width: fit-content;
+    display: inline-block;
+    position: fixed;
+    border-radius: 100%;
+    margin-top: 3vw;
+    margin-left: 87vw;
+
+  }
+  
+  /* button open menu */
+  
+  .open-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0);
+    border-color: #0e516b00;
+    transition: opacity 0.2s ease 0s;
+    
+  }
+
+  .open-menu:active {
+    opacity: 0.5;
+  }
+  
+  /* menu trigger */
+  
+  .menu-trigger {
+    padding: 0.5rem 1rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .menu-trigger:hover {
+    display: block;
+  }
+  
+  .open-menu:active + .menu-trigger {
+    display: block;
+  }
+  
+  /* nav menu */
+  
+  .nav-menu {
+    border-radius: 4vw;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+    pointer-events: none;
+    background: var(--laranja);
+    margin-left: -10vw;
+    height: 20vw;
+  }
+  
+  .nav-menu:hover {
+    pointer-events: initial;
+    opacity: 1;
+  }
+  
+  .menu-trigger:hover + .nav-menu {
+    pointer-events: initial;
+    opacity: 1;
+  }
+  
+  .nav-menu-item {
+    font-family: "Cutive Mono", monospace;
+    font-size: 2vw;
+    margin-top: 0.3vw;
+    padding: 1vw 1vw 3vw 1vw;
+    height: 0.5vw;
+    width: 70%;
+    text-align: center;
+    transition: opacity 0.3s ease 0s, background-color 0.2s ease 0s;
+    cursor: pointer;
+    background: var(--laranja);
+    color: var(--fundo);
+  }
+  
+  .nav-menu-item:hover {
+    width: 85.5%;
+    background-color: var(--azul);
+  }
+  
+  .nav-menu-item:active {
+    opacity: 0.8;
+    background-color: #41464e;
+  }
+  
+  /* item triggered */
+  
+  .item-triggered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50% 0px;
+    font: 600 2rem monospace;
+
+  }
+  
+  .item-triggered span {
+    color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+  }
+
+/*APRESENTACAO*/
+
+
+#ola_nome{
+    color: white;
+    font-family: "Jazz LET", fantasy;
+    font-style: normal;
+    font-size: 4vw;
+    font-weight: normal;
+    font-weight: 2000;
+    line-height: 5vw;
+}
+
+#fundo{
+  width: 98.8vw;
+  height: 38vw;
+  background-image: linear-gradient(to bottom, transparent 0%, var(--fundo) 99%), url(/imagens/agua.jpg);
+  background-size: cover;
+}
+
+#espacinho{
+  height: 1.5vw;
+}
+
+#borda{
+  border-image: linear-gradient(to bottom, transparent 0%, var(--fundo) 99%);
+  border: 6px;
+  border-style: solid;
+  padding: 5vw;
+  width: 83vw;
+  margin-left: 1.5vw;
+  height: 20vw;
+}
+
+#breve_descricao{
+  color:var(--laranja);
+  font-family: "Cutive Mono", monospace;
+  font-style: normal;
+  margin-top: 1.7vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+/*PROJETO*/
+
+#projetos{
+  margin-top: 3vw;
+  margin-left: 2vw;
+  width: 90vw;
+  height: 70vw;
+  background-color: #000000;
+  display: flex;
+  border-radius: 2vw;
+  flex-wrap: wrap;
+}
+
+#texto_projetos{
+  width: 100vw;
+  margin-top: 3vw;
+  display: flex;
+  font-size: 3vw;
+  font-family: "Jazz LET", fantasy;
+  color: white;
+  font-weight: 100;
+  margin-bottom: -4vw;
+  letter-spacing: 2px;
+}
+
+.logo_simplificada{
+  width: 6w;
+  height: 6vw;
+  transform: rotate(90deg);
+  margin-top: -0.7vw;
+}
+
+.div_projetos_titulo{
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+
+#div_projetos{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -6vw;
+}
+
+.estado{
+  border-radius: 5vw;
+  margin-bottom: 2vw;
+  padding: 1.2vw;
+  font-size: 2vw;
+}
+
+.img_site{
+  height: 23vw;
+  border-radius: 2vw;
+}
+
+.site{
+  margin-top: 3vw;
+  font-family: "Cutive Mono", monospace;
+}
+
+#finalizado{
+  background-color: var(--laranja);
+  font-weight: bold;
+  color: white;
+}
+
+#fazendo{
+  background-color: var(--azul);
+  font-weight: bold;
+  color: white;
+}
+
+#barra{
+  background-color: white;
+  width: 0.2vw;
+  height: 52vw;
+  border-radius: 10vw;
+  border: 10vw;
+}
+
+.nome_proj{
+  background-color: rgba(255, 255, 255, 0.128);
+  color: white;
+  margin-top: 2vw;
+  border-radius: 2vw;
+  font-family: "Cutive Mono", monospace;
+  height: 14vw;
+  padding: 0.1vw;
+}
+
+.tipo_site{
+  font-size: 2vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+
+.titulo_projeto{
+  font-size: 3vw;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -2vw;
+
+}
+
+#site1{
+  color:#CA7429;
+}
+
+#site2{
+  color:#0E516B;
+}
+
+/*HABILIDADES*/
+
+#habilidades{
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2vw;
+  width: 90vw;
+  border-radius: 2vw;
+}
+
+#titulo_habilidades{
+  width: 100vw;
+  margin-top: 3vw;
+  margin-bottom: 7vw;;
+  display: flex;
+  font-size: 3vw;
+  font-family: "Jazz LET", fantasy;
+  color: white;
+  margin-bottom: -4vw;
+  letter-spacing: 2px;
+}
+
+#div_programas{
+  justify-content: space-around;
+  padding: 1vw;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "Cutive Mono", monospace;
+}
+
+.parte_habilidade{
+  width: 30vw;
+  text-align: center;
+  background-color: #000000e3;
+  border-radius: 2vw;;
+}
+
+.tipo_habilidade{
+  font-family: "Cutive Mono", monospace;
+  background-color: var(--azul);
+  border-radius: 2vw;
+  width: 25vw;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.programa{
+  color:white;
+  text-align: left;
+  line-height: 4vw;
+  margin-left: 1vw;
+  
+}
+
+.nivel_habilidade{
+  width: 12vw;
+  margin-bottom: 2vw;
+}
+
+.habilidade_nome{
+  font-size: 2vw;
+}
+
+/*SOBRE*/
+
+#sobre{
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2vw;
+  width: 90vw;
+  border-radius: 2vw;
+  margin-top: 2vw;
+  font-family: "Cultive Mono", monospace;
+}
+
+#eu{
+  width:20vw;
+  border-radius: 50vw;
+}
+
+#texto_eu{
+  width: 62vw;
+}
+
+#ola{
+  font-size: 2.5vw;
+  text-align: center;
+  color: var(--laranja);
+}
+
+#sobre_descricao{
+  font-size: 2.5vw;
+  color: white;
+  text-indent: 20px;
+  font-family: "Cultive Mono", monospace;
+
+}
+
+#texto_geral_sobre{
+  display: flex;
+  justify-content: space-around;
+}
+
+#img_eu{
+  width: 30vw;
+  text-align: center;
+  margin-top: 6vw;
+}
+
+
+/*REDES SOCIAIS*/
+
+#contato{
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2vw;
+  width: 90vw;
+  border-radius: 2vw;
+  margin-top: 10vw;
+}
+
+#textinho_contato{
+  font-family: "Cultive Mono", monospace;
+  width: 100vw;
+  color: white;
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+#redes{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3w;
+  padding: 5vw;
+  width: 90vw;
+  text-align: center;
+}
+
+.icon_redes{
+  width: 5vw;
+}
+
+.nome_rede{
+  color: var(--laranja);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*RODAPE*/
+
+footer{
+  text-align: center;
+  background-color: var(--laranja);
+  height: 5vw;
+  padding: 0.60vw;
+}
